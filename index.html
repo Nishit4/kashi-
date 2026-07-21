@@ -25,6 +25,7 @@
           <a href="#how-it-works">How it works</a>
           <a href="#contact">Contact</a>
         </div>
+        <a class="btn btn-primary nav-cta" href="#contact">Get in touch</a>
       </nav>
 
       <div class="hero-grid">
@@ -130,10 +131,46 @@
         </div>
       </section>
 
-      <section id="contact" class="section cta-section">
-        <h2>Ready to launch your next version?</h2>
-        <p>Use this page as the first impression for your app and publish it in minutes.</p>
-        <a class="btn btn-primary" href="mailto:hello@kisansaathi.com">Contact the team</a>
+      <section id="contact" class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Contact the team</p>
+          <h2>Let’s build Kisan Saathi together.</h2>
+          <p class="section-copy">
+            Share your app idea, request a demo, or join the early access list to pitch this product with confidence.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Start your pitch</h3>
+            <p>
+              We help founders and teams turn the Kisan Saathi concept into a farmer-ready product with a strong launch plan and demo-ready messaging.
+            </p>
+            <ul>
+              <li>Early access waitlist</li>
+              <li>Investor-ready product pitch</li>
+              <li>Farmer-focused growth support</li>
+            </ul>
+            <div class="contact-detail">
+              <strong>Email</strong>
+              <a href="mailto:hello@kisansaathi.com">hello@kisansaathi.com</a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Asha from Nashik" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="asha@example.com" required />
+
+            <label for="message">Tell us about your idea</label>
+            <textarea id="message" name="message" rows="5" placeholder="What problem do you want Kisan Saathi to solve?" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send inquiry</button>
+            <p class="form-note">We’ll reply within one business day with next steps.</p>
+            <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
       </section>
     </main>
 
