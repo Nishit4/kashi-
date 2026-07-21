@@ -21,7 +21,8 @@ Then visit http://127.0.0.1:8000/
 2. Push the contents to the repository.
 3. In GitHub, open Settings → Pages.
 4. Set Source to GitHub Actions.
-5. The workflow in .github/workflows/deploy-pages.yml will publish the site automatically.
+5. If this is the first time enabling Pages, add a repository secret named `PAGES_PAT` containing a personal access token with `repo` scope or Pages write permissions.
+6. The workflow in `.github/workflows/deploy-pages.yml` will publish the site automatically.
 
 ## Next improvements
 - Add real screenshots and branding

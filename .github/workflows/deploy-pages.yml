@@ -24,10 +24,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Enable Pages with PAT
+        if: ${{ secrets.PAGES_PAT != '' }}
         uses: actions/configure-pages@v5
         with:
           enablement: github-pages
+          token: ${{ secrets.PAGES_PAT }}
+
+      - name: Setup Pages
+        if: ${{ secrets.PAGES_PAT == '' }}
+        uses: actions/configure-pages@v5
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload artifact
